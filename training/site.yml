@@ -1,0 +1,15 @@
+---
+# file site.yml
+
+- hosts: webservers
+  roles:
+  - common
+  #- docker
+  - nginx
+
+  pre_tasks:
+  - debug: msg="nginx by Great Chandan"
+
+
+  post_tasks:
+  - debug: msg="Mauj kro"
